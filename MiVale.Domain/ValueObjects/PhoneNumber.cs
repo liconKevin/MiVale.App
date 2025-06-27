@@ -6,8 +6,6 @@ namespace MiVale.Domain.ValueObjects
     public record PhoneNumber
     {
 
-        const int Length = 10;
-
         const string pattern = @"^\d{10}$";
 
         public string value {  get; init; }

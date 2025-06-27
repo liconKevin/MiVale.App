@@ -3,7 +3,7 @@ using MiVale.Domain.ValueObjects;
 
 namespace MiVale.Domain.Entities
 {
-    public class Clients
+    public class Client
     {
 
         public PhoneNumber phoneNumber { get; set; }
@@ -14,6 +14,7 @@ namespace MiVale.Domain.Entities
 
         public bool IsActive { get; set; }
 
+        public List<Loan> Loans { get; set; }
 
     }
 }
